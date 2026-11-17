@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcneCare - Acne Prone Skin</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fbf8f2;
+            color: #26342f;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #dce8df;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #527565;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #26342f;
+            margin-left: 20px;
+        }
+
+        /* HERO */
+        .hero {
+            padding: 90px 8%;
+            text-align: center;
+            background: #e8eee6;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            color: #527565;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #527565;
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+
+        /* SECTION */
+        section {
+            padding: 60px 8%;
+        }
+
+        .judul {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .judul h2 {
+            color: #527565;
+            font-size: 32px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+
+        .card h3 {
+            color: #527565;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #65736d;
+        }
+
+        /* ROUTINE */
+        .routine {
+            background: #f2f5ef;
+        }
+
+        .routine-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .routine-box h3 {
+            color: #527565;
+            margin-bottom: 15px;
+        }
+
+        .routine-box ul {
+            padding-left: 22px;
+        }
+
+        .routine-box li {
+            margin-bottom: 10px;
+        }
+
+        /* TIPS */
+        .tips {
+            background: #e8eee6;
+            text-align: center;
+        }
+
+        .tips p {
+            max-width: 700px;
+            margin: 15px auto;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #527565;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">AcneCare.</div>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#routine">Skincare</a>
+            <a href="#tips">Tips</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <h1>Kenali dan Rawat Kulitmu</h1>
+
+        <p>
+            Acne prone skin adalah kondisi kulit yang
+            cenderung mudah mengalami jerawat.
+            Yuk, kenali penyebab dan cara merawatnya
+            dengan benar!
+        </p>
+
+        <a href="#about" class="button">
+            Pelajari Lebih Lanjut
+        </a>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <div class="judul">
+            <h2>Apa Itu Acne Prone Skin?</h2>
+            <p>Mengenal kulit yang mudah berjerawat.</p>
+        </div>
+
+        <div class="container">
+
+            <div class="card">
+                <h3>Pori-Pori Tersumbat</h3>
+                <p>
+                    Minyak dan sel kulit mati dapat
+                    menumpuk sehingga menyumbat pori-pori.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Perubahan Hormon</h3>
+                <p>
+                    Perubahan hormon dapat meningkatkan
+                    produksi minyak pada kulit.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Peradangan</h3>
+                <p>
+                    Bakteri dan peradangan dapat berperan
+                    dalam munculnya jerawat.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKINCARE ROUTINE -->
+    <section class="routine" id="routine">
+
+        <div class="judul">
+            <h2>Skincare Routine</h2>
+            <p>Rutinitas sederhana untuk kulit berjerawat.</p>
+        </div>
+
+        <div class="routine-box">
+            <h3>☀️ Morning Routine</h3>
+
+            <ul>
+                <li>
+                    <b>Facial Wash:</b>
+                    Membersihkan wajah dari minyak dan kotoran.
+                </li>
+
+                <li>
+                    <b>Moisturizer:</b>
+                    Menjaga kelembapan kulit.
+                </li>
+
+                <li>
+                    <b>Sunscreen:</b>
+                    Melindungi kulit dari paparan sinar matahari.
+                </li>
+            </ul>
+        </div>
+
+        <div class="routine-box">
+            <h3>🌙 Night Routine</h3>
+
+            <ul>
+                <li>
+                    <b>Facial Wash:</b>
+                    Membersihkan sisa kotoran dan sunscreen.
+                </li>
+
+                <li>
+                    <b>Acne Treatment:</b>
+                    Membantu merawat kulit berjerawat.
+                </li>
+
+                <li>
+                    <b>Moisturizer:</b>
+                    Membantu menjaga skin barrier.
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- TIPS -->
+    <section id="tips">
+
+        <div class="judul">
+            <h2>Tips Merawat Kulit</h2>
+        </div>
+
+        <div class="container">
+
+            <div class="card">
+                <h3>01. Jangan Memencet Jerawat</h3>
+                <p>
+                    Memencet jerawat dapat memperparah
+                    peradangan dan meningkatkan risiko bekas.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>02. Gunakan Skincare Sesuai Kebutuhan</h3>
+                <p>
+                    Pilih produk yang sesuai dan hindari
+                    mencoba terlalu banyak produk sekaligus.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>03. Jaga Kebersihan</h3>
+                <p>
+                    Bersihkan wajah secara lembut dan
+                    rutin mengganti sarung bantal.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>AcneCare.</h3>
+
+        <p>
+            Love Your Skin, Take Care of Yourself.
+        </p>
+
+        <p>
+            © 2026 AcneCare. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script>
+        // Pesan ketika website dibuka
+        console.log("Welcome to AcneCare Website!");
+
+    </script>
+
+</body>
+</html>
